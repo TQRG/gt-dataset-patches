@@ -15,7 +15,8 @@ wget -O ../../data/bigvul/big-vul-msr20.csv https://github.com/ZeoVan/MSR_20_Cod
 wget -O ../../data/secbench/secbench.csv https://github.com/TQRG/secbench/raw/master/dataset/secbench.csv
 mv ../../data/secbench/secbench.csv ../../data/secbench/github-secbench-patches.csv
 
-wget -O ../../data/sap/pontas-sap-msr19.csv https://github.com/SAP/project-kb/raw/master/MSR2019/dataset/vulas_db_msr2019_release.csv
+wget -O ../../data/sap/pontas-sap-msr19.csv https://github.com/SAP/project-kb/raw/refs/heads/main/MSR2019/dataset/vulas_db_msr2019_release.csv
+# OLD/BROKEN: https://github.com/SAP/project-kb/raw/master/MSR2019/dataset/vulas_db_msr2019_release.csv
 echo "$(echo -n 'cve_id,project,sha,type\n'; cat ../../data/sap/pontas-sap-msr19.csv)" > ../../data/sap/pontas-sap-msr19.csv
 
 gdown -O ../../data/devign/projects/ https://drive.google.com/uc\?id\=1Nk_U52_gVHYfnNk-pcXlnxssOBrmSllV
